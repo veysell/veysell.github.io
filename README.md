@@ -1,1 +1,0 @@
-# veysell.github.io
