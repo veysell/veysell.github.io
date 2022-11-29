@@ -352,8 +352,8 @@
 .logo{
     display: block;
     position: relative;
-    height: 69%;
-    flex-grow: 1;
+    height:450%;
+    flex-grow:1;
 }
 .whapp{
     color: green;
