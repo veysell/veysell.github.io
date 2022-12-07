@@ -1,6 +1,0 @@
-
-            Main text Font: Audiowide
-            Slogan Text Font: Audiowide
-            COLOR RGBA: rgba(0, 0, 0, 1)
-            COLOR HEX: #000000
-            
