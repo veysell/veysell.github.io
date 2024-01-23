@@ -10,14 +10,17 @@ document.getElementById('humanBody').addEventListener('click', function (event) 
   if ((x >= 40 && x <= 45 && y >= 20 && y <= 25) || (x >= 55 && x <= 62 && y >= 20 && y <= 25)) {
     hideResult();
     selectedDisease = "Göz Hastalıkları";
+    document.getElementById('titleArea').style.display='none';
   } else if (x >= 40 && x <= 60 && y >= 55 && y <= 65) {
     hideResult();
     selectedDisease = "Boşaltım Sistemi Hastalıkları";
+    document.getElementById('titleArea').style.display='none';
   }
   else if ((x >= 30 && x <= 35 && y >= 22 && y <= 28) || (x >= 67 && x <= 73 && y >= 22 && y <= 28)
     || (x >= 47 && x <= 49 && y >= 26 && y <= 29) || (x >= 39 && x <= 61 && y >= 37 && y <= 47)) {
     hideResult();
     selectedDisease = "Kulak Burun Boğaz Hastalıkları";
+    document.getElementById('titleArea').style.display='none';
   }
   else {
     hideResult();
@@ -109,6 +112,7 @@ function hideResult() {
   // Hide the result on the right side
   document.getElementById('resultContainer').style.display = 'none';
   document.getElementById('questionContainer').style.display = 'none';
+  document.getElementById('titleArea').style.display='block';
   // Hide all painInfo elements
   hideAllPainInfo();
 }
@@ -119,6 +123,7 @@ function hideAllPainInfo() {
   for (var i = 0; i < painInfos.length; i++) {
     painInfos[i].style.display = 'none';
   }
+  document.getElementById('titleArea').style.display='block';
 }
 
 function getSelectedSymptoms() {
